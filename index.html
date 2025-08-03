@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longin Page</title>
+    <meta name="description" content="A simple and responsive login web page">
+    <meta name="keywords" content="login, html, css, javascript, responsive, biginner project">
+    <meta name="author" content="Thabani Makhaye">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="#" type="image/x-icon">
+
+</head>
+
+<body>
+    <main id="main">
+        <header>
+        <h2>Hello, Welcome To Pine City Zoo</h2>
+        <p>To see the zoo login by using <b>"Mzala@24"</b> as username and <b>"MeOnly03"</b> as your password:</p>
+    </header>
+    <main id="loginContainer">
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Useername" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <div class="showPassword">
+                <label for="togglePassword">Show Password</label>
+                <input type="checkbox" id="togglePassword">
+            </div>
+            <div class="rememberMe">
+                <label for="rememberMe">Remember me</label>
+                <input type="checkbox" id="rememberMe">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p id="message"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pine City Zoo page by Mzaladev</p>
+        <p>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+        </p>
+    </footer>
+    
+    <script src="login.js"></script>
+</body>
+
+</html>
