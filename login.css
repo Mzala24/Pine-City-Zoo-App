@@ -1,0 +1,122 @@
+/*Body*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: hwb(0 94% 6%);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  display: flexbox;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/*Backgorund image*/
+#main {
+  margin-top: 11px;
+  background: url('images/map-blur.png');
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center;
+}
+
+h2,
+p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#loginContainer {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  align-items: cente
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.showPassword,
+.rememberMe {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+#message {
+  margin-top: 10px;
+  color: red;
+  text-align: center;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  background-color: #222;
+  color: #eee;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 50px;
+  border-top: 1px solid #444;
+  width: 100%;
+}
+
+footer a {
+  color: teal;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*Page Responsiveness*/
+@media (max-width: 400px) {
+  #loginContainer {
+    width: 90%;
+    padding: 20px;
+  }
+  input,
+  button {
+    font-size: 16px;
+  }
+}

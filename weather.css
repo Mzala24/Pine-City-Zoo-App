@@ -1,0 +1,141 @@
+/* Base reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+#header{
+  justify-content:center ;
+  text-align: center;
+}
+
+#header img {
+  max-width: 150px;
+  justify-content: center;
+  
+}
+#tabs-top{
+    text-align: center;
+}
+
+
+#tabs-top a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+#tabs-top a:hover {
+  background-color: burlywood;
+}
+
+
+/* Weather Icon Images */
+img.info-box-weather-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Table Layout (Desktop View) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Weather-specific row coloring */
+tr.sunny {
+  background-color: #fff9c4; /* light yellow */
+}
+
+tr.rain {
+  background-color: #e3f2fd; /* light blue */
+}
+
+tr.cloudy {
+  background-color: #eeeeee; /* light gray */
+}
+
+/* Zebra striping for non-themed rows */
+tr:nth-child(even):not(.sunny):not(.rain):not(.cloudy) {
+  background-color: #f9f9f9;
+}
+
+/* Card layout for mobile */
+@media (max-width: 600px) {
+  table {
+    display: block;
+  }
+
+  tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  td {
+    display: block;
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  img.info-box-weather-icon {
+    height: 24px;
+    width: 24px;
+    margin: 0 8px 0 0;
+  }
+
+  /* Optional: Add a bit of header styling per card */
+  tr::before {
+    content: attr(data-day);
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  /* Hide default row headers since we use ::before */
+  td:first-child {
+    display: none;
+  }
+}
+
+
+#tabs-bottom{
+    text-align: center;
+}
+
+#tabs-bottom a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+#tabs-bottom a:hover {
+  background-color: wheat;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  padding: 15px;
+  background-color: wheat;
+  font-size: 14px;
+}

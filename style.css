@@ -1,0 +1,215 @@
+#main {
+  margin-top: 11px;
+  background: url('images/map.png');
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center;
+}
+
+#header {
+  text-align: center;
+  padding: 10px 0;
+  background-image: url('images/wood-bg.png');
+  background-repeat: repeat-x;
+  z-index: 500;
+}
+
+#header img {
+  max-width: 150px;
+}
+#tabs-top{
+    text-align: center;
+}
+
+
+#tabs-top a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+#tabs-top a:hover {
+  background-color: burlywood;
+}
+
+#content {
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+/* Card style for animal box */
+a.info-box {
+  text-decoration: none;
+  background: rgba(255, 225, 55, 0.8);
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 12px auto;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for info-box */
+a.info-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Images on the left */
+.info-box img {
+  height: 70px;
+  margin: 10px;
+  float: left;
+  border-radius: 8px;
+}
+
+/* Text style */
+.info-box h3 {
+  margin: 10px 0 5px 0;
+  color: #572800;
+  font-size: 18px;
+}
+
+.info-box p {
+  margin: 0;
+  color: #131313;
+  font-size: 14px;
+}
+
+/* Arrow icon on the right */
+.info-box img.right {
+  float: right;
+  margin-top: 25px;
+  margin-right: 10px;
+  height: 40px;
+}
+
+/* Clear float inside box */
+.info-box::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+  a.info-box {
+    padding: 8px;
+    height: auto;
+  }
+
+  .info-box img {
+    height: 60px;
+    margin: 8px;
+  }
+
+  .info-box img.right {
+    height: 30px;
+    margin-top: 20px;
+  }
+
+  .info-box h3 {
+    font-size: 16px;
+  }
+
+  .info-box p {
+    font-size: 13px;
+  }
+}
+
+#animal-highlight {
+  background-color: #fff8dc;
+  padding: 30px 20px;
+  margin: 30px auto;
+  border: 2px solid #deb887;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 1000px;
+}
+
+#animal-highlight h3 {
+  font-size: 28px;
+  color: #8b4513;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#animal-highlight .highlight-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#animal-highlight .highlight-item {
+  flex: 1 1 45%;
+  background-color: #fdf5e6;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#animal-highlight h2 {
+  color: black;
+  margin: 10px 0;
+}
+
+#animal-highlight p {
+  font-size: 16px;
+  color: black;
+  margin: 10px;
+}
+
+#animal-highlight img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+ /* Tabs at the bottom */
+
+#tabs-bottom{
+    text-align: center;
+}
+
+#tabs-bottom a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+#tabs-bottom a:hover {
+  background-color: wheat;
+}
+
+/*Logou button*/
+button {
+  width:fit-content;
+  padding: 10px;
+  background-color:wheat;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  padding: 15px;
+  background-color: wheat;
+  font-size: 14px;
+}
